@@ -64,6 +64,8 @@ public class _07_TGDynamicElementsTest extends Base {
 
         String[] expectedTexts = {"Box 1", "Box 2"};
 
+
+
         for (int i = 0; i <boxes.size(); i++) {
             Assert.assertTrue(boxes.get(i).isDisplayed());
             Assert.assertEquals(boxes.get(i).getText(), expectedTexts[i]);
