@@ -9,27 +9,27 @@ import org.testng.annotations.Test;
 import utils.Waiter;
 
 public class _05_FacebookTest extends Base {
-        /**
-        Go to https://www.facebook.com/
-        Validate the title of the page is "Facebook - log in or sign up"
-        Validate the URL of the page is "https://www.facebook.com/"
-        Validate "facebook" logo is displayed
-        Validate heading2 "Connect with friends and the world around you on Facebook." is displayed
-        Validate "Email or phone number" input box is displayed
-        Validate "Password" input box is displayed
-        Validate "Log In" button is displayed and enabled
-        Validate "Forgot password?" link is displayed
-        Validate "Create new account" link is displayed
-         */
+    /**
+     * Go to https://www.facebook.com/
+     * Validate the title of the page is "Facebook - log in or sign up"
+     * Validate the URL of the page is "https://www.facebook.com/"
+     * Validate "facebook" logo is displayed
+     * Validate heading2 "Connect with friends and the world around you on Facebook." is displayed
+     * Validate "Email or phone number" input box is displayed
+     * Validate "Password" input box is displayed
+     * Validate "Log In" button is displayed and enabled
+     * Validate "Forgot password?" link is displayed
+     * Validate "Create new account" link is displayed
+     */
 
 
     @BeforeMethod
-    public void setPage(){
+    public void setPage() {
         driver.get("https://www.facebook.com/");
     }
 
     @Test
-    public void validateFacebookLoginForm(){
+    public void validateFacebookLoginForm() {
         Assert.assertEquals(driver.getTitle(), "Facebook - log in or sign up");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/");
 
@@ -70,16 +70,17 @@ public class _05_FacebookTest extends Base {
         Assert.assertFalse(createNewAccountLink.getAttribute("href").isEmpty());
     }
 
-     /** Test Case 1:
-        Go to https://www.facebook.com/
-        Enter username as "sdjhfgsdkufghdl@gmail.com"
-        Enter password as "1234"
-        Click on "Log In" button
-        Validate the error message "The email you entered isn't connected to an account. Find your account and log in."
-      */
+    /**
+     * Test Case 1:
+     * Go to https://www.facebook.com/
+     * Enter username as "sdjhfgsdkufghdl@gmail.com"
+     * Enter password as "1234"
+     * Click on "Log In" button
+     * Validate the error message "The email you entered isn't connected to an account. Find your account and log in."
+     */
 
     @Test
-    public void validateFacebookInvalidLoginAttempt(){
+    public void validateFacebookInvalidLoginAttempt() {
         WebElement usernameInputBox = driver.findElement(By.id("email"));
         WebElement passwordInputBox = driver.findElement(By.id("pass"));
         WebElement loginButton = driver.findElement(By.cssSelector("button[id^='u_0_5']"));
@@ -91,10 +92,9 @@ public class _05_FacebookTest extends Base {
         WebElement errorMessage = driver.findElement(By.cssSelector("._9ay7"));
 
         Assert.assertTrue(errorMessage.isDisplayed());
-        Assert.assertEquals(errorMessage.getText(), "The email you entered isn't connected to an account. Find your account and log in.");
+        Assert.assertEquals(errorMessage.getText(), "The email you entered isn’t connected to an account. Find your account and log in.");
     }
 }
-
 
 
 
