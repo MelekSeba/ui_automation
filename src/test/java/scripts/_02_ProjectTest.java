@@ -1,5 +1,6 @@
 package scripts;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -9,7 +10,7 @@ import utils.Waiter;
 
 import java.util.NoSuchElementException;
 
-public class _02_Project2 extends Base {
+public class _02_ProjectTest extends Base {
 
 
     @BeforeMethod
@@ -20,7 +21,6 @@ public class _02_Project2 extends Base {
 
     /**
      * Test Case 01 - Validate the login form
-     * <p>
      * Navigate to https://techglobal-training.com/frontend/project-2*
      * Validate that the username input box is displayed  *
      * Validate that the username input box is not required
@@ -45,7 +45,7 @@ public class _02_Project2 extends Base {
         WebElement passwordInputBox = driver.findElement(By.id("password"));
         WebElement passwordLabel = driver.findElement(By.xpath("//label[@for='password']"));
         WebElement loginButton = driver.findElement(By.id("login_btn"));
-        WebElement forgotPasswordLink = driver.findElement(By.linkText("Forgot Password?"));
+        WebElement forgotPasswordLink = driver.findElement(By.xpath("//button[@id='login_btn']/../a"));
 
         Assert.assertTrue(userNameInputBox.isDisplayed());
         Assert.assertFalse(Boolean.parseBoolean(userNameInputBox.getAttribute("required")));
@@ -54,17 +54,15 @@ public class _02_Project2 extends Base {
         Assert.assertFalse(Boolean.parseBoolean(passwordInputBox.getAttribute("required")));
         Assert.assertEquals(passwordLabel.getText(), "Please enter your password");
         Assert.assertTrue(loginButton.isDisplayed());
-        loginButton.click();
-        Waiter.pause(2);
+        Assert.assertTrue(loginButton.isEnabled());
         Assert.assertTrue(forgotPasswordLink.isDisplayed());
-        forgotPasswordLink.click();
+        Assert.assertTrue(forgotPasswordLink.isEnabled());
         Assert.assertEquals(forgotPasswordLink.getText(), "Forgot Password?");
 
     }
 
     /**
      * Test Case 02 - Validate the valid login
-     * <p>
      * Navigate to https://techglobal-training.com/frontend/project-2
      * Enter the username as “TechGlobal”
      * Enter the password as “Test1234”
@@ -162,12 +160,7 @@ public class _02_Project2 extends Base {
 
     @Test
     public void validateReset() {
-        /**
-         WindowHandler.switchToChildWindow();
-         Waiter.pause(1);
-         */
-
-        WebElement forgotPasswordLink = driver.findElement(By.linkText("Forgot Password?"));
+        WebElement forgotPasswordLink = driver.findElement(By.xpath("//button[@id='login_btn']/../a"));
         forgotPasswordLink.click();
         WebElement modalHeading = driver.findElement(By.cssSelector(".modal-card-head"));
 
@@ -198,8 +191,9 @@ public class _02_Project2 extends Base {
     public void validateTheResetPassword() {
         WebElement forgotPasswordLink = driver.findElement(By.linkText("Forgot Password?"));
         forgotPasswordLink.click();
+        Faker faker= new Faker();
         WebElement emailInputBox = driver.findElement(By.id("email"));
-        emailInputBox.sendKeys("melekseba@gmail.com");
+        emailInputBox.sendKeys("abc1234@gmail.com");
         WebElement submitButton = driver.findElement(By.id("submit"));
         submitButton.click();
         WebElement confirmationMessage = driver.findElement(By.id("confirmation_message"));
@@ -241,9 +235,9 @@ public class _02_Project2 extends Base {
         WebElement userNameInputBox = driver.findElement(By.id("username"));
         WebElement passwordInputBox = driver.findElement(By.id("password"));
         userNameInputBox.sendKeys("John");
-        Waiter.pause(2);
+        Waiter.pause(1);
         passwordInputBox.sendKeys("Test1234");
-        Waiter.pause(2);
+        Waiter.pause(1);
         WebElement loginButton = driver.findElement(By.id("login_btn"));
         loginButton.click();
         WebElement errorMessage = driver.findElement(By.id("error_message"));
@@ -266,9 +260,9 @@ public class _02_Project2 extends Base {
        WebElement userNameInputBox = driver.findElement(By.id("username"));
        WebElement passwordInputBox = driver.findElement(By.id("password"));
        userNameInputBox.sendKeys("TechGlobal");
-       Waiter.pause(2);
+       Waiter.pause(1);
        passwordInputBox.sendKeys("1234");
-       Waiter.pause(2);
+       Waiter.pause(1);
        WebElement loginButton = driver.findElement(By.id("login_btn"));
        loginButton.click();
        WebElement failureMessage = driver.findElement(By.id("error_message"));
@@ -292,9 +286,9 @@ public class _02_Project2 extends Base {
         WebElement userNameInputBox = driver.findElement(By.id("username"));
         WebElement passwordInputBox = driver.findElement(By.id("password"));
         userNameInputBox.sendKeys("John");
-        Waiter.pause(2);
+        Waiter.pause(1);
         passwordInputBox.sendKeys("1234");
-        Waiter.pause(2);
+        Waiter.pause(1);
         WebElement loginButton = driver.findElement(By.id("login_btn"));
         loginButton.click();
         WebElement failureMessage = driver.findElement(By.id("error_message"));

@@ -1,8 +1,6 @@
 package scripts;
 
-import javafx.scene.layout.Priority;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,9 +10,8 @@ import org.testng.annotations.Test;
 import utils.Waiter;
 
 import java.util.List;
-import java.util.Objects;
 
-public class _01_Project1 extends Base {
+public class _01_ProjectTest extends Base {
     /**
     Navigate to https://techglobal-training.com/frontend/project-1
     Validate the heading is “Contact Us”
