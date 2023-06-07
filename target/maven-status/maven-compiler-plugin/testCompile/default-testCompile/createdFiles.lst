@@ -2,7 +2,6 @@ scripts\Base.class
 scripts\_16_TGFileDownload.class
 scripts\_14_MultipleWindowsTest.class
 scripts\_04_TGLocatorsTest.class
-scripts\_01_Project1.class
 scripts\_13_IFrameTest.class
 scripts\_10_TGRadioButtonsTest.class
 utils\ConfigurationReader.class
@@ -12,7 +11,6 @@ scripts\_06_WikiTest.class
 scripts\_11_TGDropdownsTest.class
 utils\WindowHandler.class
 scripts\_17_TGStaticTableTest.class
-scripts\_02_Project2.class
 utils\DropdownHandler.class
 scripts\_05_FacebookTest.class
 scripts\_15_TGFileUpload.class
