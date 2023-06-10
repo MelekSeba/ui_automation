@@ -1,8 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 42, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 311.573 sec <<< FAILURE! - in TestSuite
-waitForBlueBox(scripts._08_TGWaitsTest)  Time elapsed: 30.274 sec  <<< FAILURE!
+Tests run: 66, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 506.97 sec <<< FAILURE! - in TestSuite
+validateContactUsInfo(scripts._01_ProjectTest)  Time elapsed: 0.268 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [2860 S River Rd Suite 480, Des Plaines, IL 60018]
+	at scripts._01_ProjectTest.validateContactUsInfo(_01_ProjectTest.java:38)
+
+validateFullNameInputBox(scripts._01_ProjectTest)  Time elapsed: 0.315 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Enter your  name] but found [Enter your full name]
+	at scripts._01_ProjectTest.validateFullNameInputBox(_01_ProjectTest.java:61)
+
+validateGenderRadioButton(scripts._01_ProjectTest)  Time elapsed: 0.094 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Gender] but found [Gender *]
+	at scripts._01_ProjectTest.validateGenderRadioButton(_01_ProjectTest.java:77)
+
+validateEmail(scripts._01_ProjectTest)  Time elapsed: 0.162 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Email] but found [Email *]
+	at scripts._01_ProjectTest.validateEmail(_01_ProjectTest.java:131)
+
+waitForBlueBox(scripts._08_TGWaitsTest)  Time elapsed: 30.151 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"button[class*='blue_box']"}
   (Session info: chrome=114.0.5735.110)
@@ -10,12 +26,12 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HP', ip: '192.168.0.130', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270bd329e0ddd52df3bd022181823c85
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ba319645e6094fd8054e9abdf9a9c46
 *** Element info: {Using=css selector, value=button[class*='blue_box']}
 	at scripts._08_TGWaitsTest.waitForBlueBox(_08_TGWaitsTest.java:52)
 
-validateTheFormSubmission(scripts._13_IFrameTest)  Time elapsed: 30.241 sec  <<< FAILURE!
+validateTheFormSubmission(scripts._13_IFrameTest)  Time elapsed: 30.143 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"input[id='first_name]"}
   (Session info: chrome=114.0.5735.110)
@@ -23,12 +39,12 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HP', ip: '192.168.0.130', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03c40bc4966ebbaadc089822dc24bc45
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58098}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8aaff49ecef35c0e0909b7182ad5e33b
 *** Element info: {Using=css selector, value=input[id='first_name]}
 	at scripts._13_IFrameTest.validateTheFormSubmission(_13_IFrameTest.java:50)
 
-validateTheLinkURLs(scripts._14_MultipleWindowsTest)  Time elapsed: 6.162 sec  <<< FAILURE!
+validateTheLinkURLs(scripts._14_MultipleWindowsTest)  Time elapsed: 16.54 sec  <<< FAILURE!
 java.lang.AssertionError: expected [https://www.microsoft.com/en-us/] but found [https://www.microsoft.com/en-ca/]
 	at scripts._14_MultipleWindowsTest.validateTheLinkURLs(_14_MultipleWindowsTest.java:110)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="311.573" tests="42" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="506.97" tests="66" errors="0" skipped="0" failures="7">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -47,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_361\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.3.1 test -PRegression"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.3.1 clean test -PRegression"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,97 +65,165 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validateNavigation" classname="scripts._01_GoogleTest" time="12.779"/>
-  <testcase name="validateSearchButton" classname="scripts._01_GoogleTest" time="0.247"/>
-  <testcase name="validateTitleAndURL" classname="scripts._02_AppleTest" time="0.019"/>
-  <testcase name="validateKiwiParagraph" classname="scripts._03_TGLocatorsTest" time="0.093"/>
-  <testcase name="validateTitleAndURL" classname="scripts._01_GoogleTest" time="0.05"/>
-  <testcase name="validateOrangeParagraph" classname="scripts._03_TGLocatorsTest" time="0.212"/>
-  <testcase name="validateGrapesParagraph" classname="scripts._03_TGLocatorsTest" time="0.084"/>
-  <testcase name="validateRedAppleLink" classname="scripts._03_TGLocatorsTest" time="0.091"/>
-  <testcase name="validateAllLinks" classname="scripts._03_TGLocatorsTest" time="0.232"/>
-  <testcase name="validateLanguages" classname="scripts._04_TGLocatorsTest" time="0.144"/>
-  <testcase name="validateListHeaders" classname="scripts._04_TGLocatorsTest" time="0.105"/>
-  <testcase name="validateTheHeader" classname="scripts._04_TGLocatorsTest" time="0.078"/>
-  <testcase name="validateFacebookInvalidLoginAttempt" classname="scripts._05_FacebookTest" time="1.304"/>
-  <testcase name="validateWikiSearch2" classname="scripts._06_WikiTest" time="0.903"/>
-  <testcase name="validateDynamicElementBox1" classname="scripts._07_TGDynamicElementsTest" time="0.085"/>
+  <testcase name="validateNavigation" classname="scripts._01_GoogleTest" time="11.831"/>
+  <testcase name="validateSearchButton" classname="scripts._01_GoogleTest" time="0.146"/>
+  <testcase name="validateTitleAndURL" classname="scripts._01_GoogleTest" time="0.034"/>
+  <testcase name="validateContactUsInfo" classname="scripts._01_ProjectTest" time="0.268">
+    <failure message="expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [2860 S River Rd Suite 480, Des Plaines, IL 60018]" type="java.lang.AssertionError">java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [2860 S River Rd Suite 480, Des Plaines, IL 60018]
+	at scripts._01_ProjectTest.validateContactUsInfo(_01_ProjectTest.java:38)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 49361
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 10, 2023 2:34:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateFullNameInputBox" classname="scripts._01_ProjectTest" time="0.315">
+    <failure message="expected [Enter your  name] but found [Enter your full name]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Enter your  name] but found [Enter your full name]
+	at scripts._01_ProjectTest.validateFullNameInputBox(_01_ProjectTest.java:61)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 16023
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 10, 2023 2:34:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateGenderRadioButton" classname="scripts._01_ProjectTest" time="0.094">
+    <failure message="expected [Gender] but found [Gender *]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Gender] but found [Gender *]
+	at scripts._01_ProjectTest.validateGenderRadioButton(_01_ProjectTest.java:77)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 11174
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 10, 2023 2:34:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateAddress" classname="scripts._01_ProjectTest" time="0.25"/>
+  <testcase name="validateEmail" classname="scripts._01_ProjectTest" time="0.162">
+    <failure message="expected [Email] but found [Email *]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Email] but found [Email *]
+	at scripts._01_ProjectTest.validateEmail(_01_ProjectTest.java:131)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 51081
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 10, 2023 2:34:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validatePhone" classname="scripts._01_ProjectTest" time="0.181"/>
+  <testcase name="validateMessage" classname="scripts._01_ProjectTest" time="0.208"/>
+  <testcase name="validateConsentCheckBox" classname="scripts._01_ProjectTest" time="0.385"/>
+  <testcase name="validateInfoSubmitting" classname="scripts._01_ProjectTest" time="5.063"/>
+  <testcase name="validateSubmit" classname="scripts._01_ProjectTest" time="0.153"/>
+  <testcase name="validateTheLoginForm" classname="scripts._02_ProjectTest" time="0.559"/>
+  <testcase name="validateTheValidLogin" classname="scripts._02_ProjectTest" time="0.553"/>
+  <testcase name="validateTheLogOut" classname="scripts._02_ProjectTest" time="0.492"/>
+  <testcase name="validateTheForgotPasswordLinkAndResetPasswordModal" classname="scripts._02_ProjectTest" time="0.637"/>
+  <testcase name="validateTheResetPasswordModalCloseButton" classname="scripts._02_ProjectTest" time="30.404"/>
+  <testcase name="validateTheResetPasswordFormSubmission" classname="scripts._02_ProjectTest" time="0.652"/>
+  <testcase name="validateTheInvalidLoginWithEmptyCredentials" classname="scripts._02_ProjectTest" time="0.301"/>
+  <testcase name="validateTheInvalidLoginWithTheWrongUsername" classname="scripts._02_ProjectTest" time="0.386"/>
+  <testcase name="validateTheInvalidLoginWithTheWrongPassword" classname="scripts._02_ProjectTest" time="0.459"/>
+  <testcase name="validateTheInvalidLoginWithTheWrongUsernameAndPassword" classname="scripts._02_ProjectTest" time="0.457"/>
+  <testcase name="validateTitleAndURL" classname="scripts._02_AppleTest" time="0.015"/>
+  <testcase name="validateKiwiParagraph" classname="scripts._03_TGLocatorsTest" time="0.08"/>
+  <testcase name="validateOrangeParagraph" classname="scripts._03_TGLocatorsTest" time="0.23"/>
+  <testcase name="validateGrapesParagraph" classname="scripts._03_TGLocatorsTest" time="0.075"/>
+  <testcase name="validateRedAppleLink" classname="scripts._03_TGLocatorsTest" time="0.103"/>
+  <testcase name="validateAllLinks" classname="scripts._03_TGLocatorsTest" time="0.238"/>
+  <testcase name="validateLanguages" classname="scripts._04_TGLocatorsTest" time="0.164"/>
+  <testcase name="validateListHeaders" classname="scripts._04_TGLocatorsTest" time="0.144"/>
+  <testcase name="validateTheHeader" classname="scripts._04_TGLocatorsTest" time="0.083"/>
+  <testcase name="validateFacebookInvalidLoginAttempt" classname="scripts._05_FacebookTest" time="1.24"/>
+  <testcase name="validateWikiSearch2" classname="scripts._06_WikiTest" time="0.87"/>
+  <testcase name="validateDynamicElementBox1" classname="scripts._07_TGDynamicElementsTest" time="0.079"/>
   <testcase name="validateDynamicElementBox2" classname="scripts._07_TGDynamicElementsTest" time="0.106"/>
-  <testcase name="validateDynamicElementBoxes" classname="scripts._07_TGDynamicElementsTest" time="0.104"/>
-  <testcase name="waitForBlueBox" classname="scripts._08_TGWaitsTest" time="30.274">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[class*=&apos;blue_box&apos;]&quot;}&#10;  (Session info: chrome=114.0.5735.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 270bd329e0ddd52df3bd022181823c85&#10;*** Element info: {Using=css selector, value=button[class*=&apos;blue_box&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="validateDynamicElementBoxes" classname="scripts._07_TGDynamicElementsTest" time="0.116"/>
+  <testcase name="waitForBlueBox" classname="scripts._08_TGWaitsTest" time="30.151">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[class*=&apos;blue_box&apos;]&quot;}&#10;  (Session info: chrome=114.0.5735.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4ba319645e6094fd8054e9abdf9a9c46&#10;*** Element info: {Using=css selector, value=button[class*=&apos;blue_box&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"button[class*='blue_box']"}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HP', ip: '192.168.0.130', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 270bd329e0ddd52df3bd022181823c85
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ba319645e6094fd8054e9abdf9a9c46
 *** Element info: {Using=css selector, value=button[class*='blue_box']}
 	at scripts._08_TGWaitsTest.waitForBlueBox(_08_TGWaitsTest.java:52)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 27284
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 51750
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 06, 2023 10:36:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2023 2:37:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="waitForRedBox" classname="scripts._08_TGWaitsTest" time="10.177"/>
-  <testcase name="checkboxTest" classname="scripts._09_TGCheckboxTest" time="0.403"/>
-  <testcase name="checkboxTest2" classname="scripts._09_TGCheckboxTest" time="0.326"/>
-  <testcase name="radioButtonsTest" classname="scripts._10_TGRadioButtonsTest" time="0.316"/>
-  <testcase name="validatePracticeMore" classname="scripts._10_TGRadioButtonsTest" time="0.358"/>
-  <testcase name="dropdownTestCase" classname="scripts._11_TGDropdownsTest" time="0.661"/>
-  <testcase name="productColorTest" classname="scripts._11_TGDropdownsTest" time="0.213"/>
-  <testcase name="productDeliveryTest" classname="scripts._11_TGDropdownsTest" time="30.16"/>
-  <testcase name="productDropdownTest" classname="scripts._11_TGDropdownsTest" time="0.124"/>
-  <testcase name="confirmationAlert" classname="scripts._12_TGAlertsTest" time="0.229"/>
-  <testcase name="warningAlert" classname="scripts._12_TGAlertsTest" time="0.135"/>
-  <testcase name="validateTheParagraph" classname="scripts._13_IFrameTest" time="0.221"/>
-  <testcase name="validateTheFormSubmission" classname="scripts._13_IFrameTest" time="30.241">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;first_name]&quot;}&#10;  (Session info: chrome=114.0.5735.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 03c40bc4966ebbaadc089822dc24bc45&#10;*** Element info: {Using=css selector, value=input[id=&apos;first_name]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="waitForRedBox" classname="scripts._08_TGWaitsTest" time="10.18"/>
+  <testcase name="checkboxTest" classname="scripts._09_TGCheckboxTest" time="0.43"/>
+  <testcase name="checkboxTest2" classname="scripts._09_TGCheckboxTest" time="0.469"/>
+  <testcase name="radioButtonsTest" classname="scripts._10_TGRadioButtonsTest" time="0.402"/>
+  <testcase name="validatePracticeMore" classname="scripts._10_TGRadioButtonsTest" time="0.459"/>
+  <testcase name="dropdownTestCase" classname="scripts._11_TGDropdownsTest" time="0.659"/>
+  <testcase name="productColorTest" classname="scripts._11_TGDropdownsTest" time="0.224"/>
+  <testcase name="productDeliveryTest" classname="scripts._11_TGDropdownsTest" time="30.124"/>
+  <testcase name="productDropdownTest" classname="scripts._11_TGDropdownsTest" time="0.144"/>
+  <testcase name="confirmationAlert" classname="scripts._12_TGAlertsTest" time="0.262"/>
+  <testcase name="warningAlert" classname="scripts._12_TGAlertsTest" time="0.145"/>
+  <testcase name="validateTheParagraph" classname="scripts._13_IFrameTest" time="0.227"/>
+  <testcase name="validateTheFormSubmission" classname="scripts._13_IFrameTest" time="30.143">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;first_name]&quot;}&#10;  (Session info: chrome=114.0.5735.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58098}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8aaff49ecef35c0e0909b7182ad5e33b&#10;*** Element info: {Using=css selector, value=input[id=&apos;first_name]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"css selector","selector":"input[id='first_name]"}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HP', ip: '192.168.0.130', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03c40bc4966ebbaadc089822dc24bc45
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58098}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8aaff49ecef35c0e0909b7182ad5e33b
 *** Element info: {Using=css selector, value=input[id='first_name]}
 	at scripts._13_IFrameTest.validateTheFormSubmission(_13_IFrameTest.java:50)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 8610
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 29353
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 06, 2023 10:38:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2023 2:39:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="validateTheAppleNavigation" classname="scripts._14_MultipleWindowsTest" time="1.17"/>
-  <testcase name="validateTheMicrosoftNavigation" classname="scripts._14_MultipleWindowsTest" time="3.213"/>
-  <testcase name="validateTheTeslaNavigation" classname="scripts._14_MultipleWindowsTest" time="3.001"/>
-  <testcase name="validateTheLinkURLs" classname="scripts._14_MultipleWindowsTest" time="6.162">
+  <testcase name="validateTheAppleNavigation" classname="scripts._14_MultipleWindowsTest" time="2.088"/>
+  <testcase name="validateTheMicrosoftNavigation" classname="scripts._14_MultipleWindowsTest" time="11.978"/>
+  <testcase name="validateTheTeslaNavigation" classname="scripts._14_MultipleWindowsTest" time="2.285"/>
+  <testcase name="validateTheLinkURLs" classname="scripts._14_MultipleWindowsTest" time="16.54">
     <failure message="expected [https://www.microsoft.com/en-us/] but found [https://www.microsoft.com/en-ca/]" type="java.lang.AssertionError">java.lang.AssertionError: expected [https://www.microsoft.com/en-us/] but found [https://www.microsoft.com/en-ca/]
 	at scripts._14_MultipleWindowsTest.validateTheLinkURLs(_14_MultipleWindowsTest.java:110)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 12652
+    <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 34611
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 06, 2023 10:39:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 10, 2023 2:40:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="basicFileUpload" classname="scripts._15_TGFileUpload" time="3.242"/>
-  <testcase name="validateFileDownload" classname="scripts._16_TGFileDownload" time="0.082"/>
-  <testcase name="validateEachCell" classname="scripts._17_TGStaticTableTest" time="0.282"/>
-  <testcase name="validateFirstRow" classname="scripts._17_TGStaticTableTest" time="0.075"/>
-  <testcase name="validateLastColumn" classname="scripts._17_TGStaticTableTest" time="0.098"/>
-  <testcase name="validateTableHeader" classname="scripts._17_TGStaticTableTest" time="0.083"/>
-  <testcase name="validateSortAscByQuantity" classname="scripts._18_TGSortableTableTest" time="2.128"/>
+  <testcase name="basicFileUpload" classname="scripts._15_TGFileUpload" time="3.251"/>
+  <testcase name="validateFileDownload" classname="scripts._16_TGFileDownload" time="0.099"/>
+  <testcase name="validateEachCell" classname="scripts._17_TGStaticTableTest" time="0.414"/>
+  <testcase name="validateFirstRow" classname="scripts._17_TGStaticTableTest" time="0.096"/>
+  <testcase name="validateLastColumn" classname="scripts._17_TGStaticTableTest" time="0.121"/>
+  <testcase name="validateTableHeader" classname="scripts._17_TGStaticTableTest" time="0.106"/>
+  <testcase name="validateSortAscByQuantity" classname="scripts._18_TGSortableTableTest" time="2.214"/>
+  <testcase name="dragAndDrop" classname="scripts._19_TGActionsTest" time="28.631"/>
+  <testcase name="keyboardActions" classname="scripts._19_TGActionsTest" time="4.461"/>
+  <testcase name="moreKeyboardActions" classname="scripts._19_TGActionsTest" time="4.297"/>
+  <testcase name="mouseActions" classname="scripts._19_TGActionsTest" time="3.665"/>
 </testsuite>
