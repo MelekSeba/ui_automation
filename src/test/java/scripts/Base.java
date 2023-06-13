@@ -4,9 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pages.GoogleSearchPage;
-import pages.GoogleSearchResultsPage;
-import pages.Project2Page;
+import pages.*;
 import utils.Driver;
 
 public class Base {
@@ -18,9 +16,8 @@ public class Base {
     public static Project2Page project2Page;
     public static GoogleSearchPage googleSearchPage;
     public static GoogleSearchResultsPage googleSearchResultsPage;
-
-
-
+    public static Project3Page project3Page;
+    public static EtsyHomePage etsyHomePage;
     @BeforeMethod
     public void setUp(){
         driver = Driver.getDriver();

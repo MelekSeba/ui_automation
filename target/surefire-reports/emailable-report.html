@@ -8,180 +8,146 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Regression Suite</th></tr>
-<tr><td><a href="#t0">All Functionalities</a></td><td class="num">59</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">505,606</td><td></td><td></td></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">68</td><td class="num">0</td><td class="num">0</td><td class="num attn">13</td><td class="num">741,052</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Functionalities &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">scripts._01_ProjectTest</td><td><a href="#m0">validateContactUsInfo</a></td><td rowspan="1">1686422076650</td><td rowspan="1">258</td></tr><tr class="failedeven"><td><a href="#m1">validateEmail</a></td><td rowspan="1">1686422093380</td><td rowspan="1">162</td></tr><tr class="failedeven"><td><a href="#m2">validateFullNameInputBox</a></td><td rowspan="1">1686422080834</td><td rowspan="1">314</td></tr><tr class="failedeven"><td><a href="#m3">validateGenderRadioButton</a></td><td rowspan="1">1686422085029</td><td rowspan="1">94</td></tr><tr class="failedodd"><td rowspan="1">scripts._08_TGWaitsTest</td><td><a href="#m4">waitForBlueBox</a></td><td rowspan="1">1686422253534</td><td rowspan="1">30150</td></tr><tr class="failedeven"><td rowspan="1">scripts._13_IFrameTest</td><td><a href="#m5">validateTheFormSubmission</a></td><td rowspan="1">1686422376079</td><td rowspan="1">30145</td></tr><tr class="failedodd"><td rowspan="1">scripts._14_MultipleWindowsTest</td><td><a href="#m6">validateTheLinkURLs</a></td><td rowspan="1">1686422437514</td><td rowspan="1">16540</td></tr><tr><th colspan="4">All Functionalities &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">scripts._01_GoogleTest</td><td><a href="#m7">validateNavigation</a></td><td rowspan="1">1686422045436</td><td rowspan="1">11829</td></tr><tr class="passedeven"><td><a href="#m8">validateSearchButton</a></td><td rowspan="1">1686422063592</td><td rowspan="1">146</td></tr><tr class="passedeven"><td><a href="#m9">validateTitleAndURL</a></td><td rowspan="1">1686422069846</td><td rowspan="1">35</td></tr><tr class="passedodd"><td rowspan="6">scripts._01_ProjectTest</td><td><a href="#m10">validateAddress</a></td><td rowspan="1">1686422088974</td><td rowspan="1">250</td></tr><tr class="passedodd"><td><a href="#m11">validateConsentCheckBox</a></td><td rowspan="1">1686422105357</td><td rowspan="1">386</td></tr><tr class="passedodd"><td><a href="#m12">validateInfoSubmitting</a></td><td rowspan="1">1686422109421</td><td rowspan="1">5063</td></tr><tr class="passedodd"><td><a href="#m13">validateMessage</a></td><td rowspan="1">1686422101379</td><td rowspan="1">208</td></tr><tr class="passedodd"><td><a href="#m14">validatePhone</a></td><td rowspan="1">1686422097359</td><td rowspan="1">182</td></tr><tr class="passedodd"><td><a href="#m15">validateSubmit</a></td><td rowspan="1">1686422118138</td><td rowspan="1">152</td></tr><tr class="passedeven"><td rowspan="1">scripts._02_AppleTest</td><td><a href="#m16">validateTitleAndURL</a></td><td rowspan="1">1686422193690</td><td rowspan="1">15</td></tr><tr class="passedodd"><td rowspan="10">scripts._02_ProjectTest</td><td><a href="#m17">validateTheForgotPasswordLinkAndResetPasswordModal</a></td><td rowspan="1">1686422134285</td><td rowspan="1">637</td></tr><tr class="passedodd"><td><a href="#m18">validateTheInvalidLoginWithEmptyCredentials</a></td><td rowspan="1">1686422176704</td><td rowspan="1">301</td></tr><tr class="passedodd"><td><a href="#m19">validateTheInvalidLoginWithTheWrongPassword</a></td><td rowspan="1">1686422184215</td><td rowspan="1">459</td></tr><tr class="passedodd"><td><a href="#m20">validateTheInvalidLoginWithTheWrongUsername</a></td><td rowspan="1">1686422180553</td><td rowspan="1">387</td></tr><tr class="passedodd"><td><a href="#m21">validateTheInvalidLoginWithTheWrongUsernameAndPassword</a></td><td rowspan="1">1686422188481</td><td rowspan="1">457</td></tr><tr class="passedodd"><td><a href="#m22">validateTheLogOut</a></td><td rowspan="1">1686422130122</td><td rowspan="1">492</td></tr><tr class="passedodd"><td><a href="#m23">validateTheLoginForm</a></td><td rowspan="1">1686422121575</td><td rowspan="1">560</td></tr><tr class="passedodd"><td><a href="#m24">validateTheResetPasswordFormSubmission</a></td><td rowspan="1">1686422172477</td><td rowspan="1">651</td></tr><tr class="passedodd"><td><a href="#m25">validateTheResetPasswordModalCloseButton</a></td><td rowspan="1">1686422138631</td><td rowspan="1">30403</td></tr><tr class="passedodd"><td><a href="#m26">validateTheValidLogin</a></td><td rowspan="1">1686422125934</td><td rowspan="1">553</td></tr><tr class="passedeven"><td rowspan="5">scripts._03_TGLocatorsTest</td><td><a href="#m27">validateAllLinks</a></td><td rowspan="1">1686422215809</td><td rowspan="1">238</td></tr><tr class="passedeven"><td><a href="#m28">validateGrapesParagraph</a></td><td rowspan="1">1686422208145</td><td rowspan="1">75</td></tr><tr class="passedeven"><td><a href="#m29">validateKiwiParagraph</a></td><td rowspan="1">1686422200485</td><td rowspan="1">81</td></tr><tr class="passedeven"><td><a href="#m30">validateOrangeParagraph</a></td><td rowspan="1">1686422204237</td><td rowspan="1">230</td></tr><tr class="passedeven"><td><a href="#m31">validateRedAppleLink</a></td><td rowspan="1">1686422212062</td><td rowspan="1">103</td></tr><tr class="passedodd"><td rowspan="3">scripts._04_TGLocatorsTest</td><td><a href="#m32">validateLanguages</a></td><td rowspan="1">1686422219552</td><td rowspan="1">164</td></tr><tr class="passedodd"><td><a href="#m33">validateListHeaders</a></td><td rowspan="1">1686422223903</td><td rowspan="1">144</td></tr><tr class="passedodd"><td><a href="#m34">validateTheHeader</a></td><td rowspan="1">1686422228036</td><td rowspan="1">82</td></tr><tr class="passedeven"><td rowspan="1">scripts._05_FacebookTest</td><td><a href="#m35">validateFacebookInvalidLoginAttempt</a></td><td rowspan="1">1686422231788</td><td rowspan="1">1240</td></tr><tr class="passedodd"><td rowspan="1">scripts._06_WikiTest</td><td><a href="#m36">validateWikiSearch2</a></td><td rowspan="1">1686422236594</td><td rowspan="1">870</td></tr><tr class="passedeven"><td rowspan="3">scripts._07_TGDynamicElementsTest</td><td><a href="#m37">validateDynamicElementBox1</a></td><td rowspan="1">1686422241423</td><td rowspan="1">79</td></tr><tr class="passedeven"><td><a href="#m38">validateDynamicElementBox2</a></td><td rowspan="1">1686422245363</td><td rowspan="1">105</td></tr><tr class="passedeven"><td><a href="#m39">validateDynamicElementBoxes</a></td><td rowspan="1">1686422249510</td><td rowspan="1">116</td></tr><tr class="passedodd"><td rowspan="1">scripts._08_TGWaitsTest</td><td><a href="#m40">waitForRedBox</a></td><td rowspan="1">1686422287294</td><td rowspan="1">10179</td></tr><tr class="passedeven"><td rowspan="2">scripts._09_TGCheckboxTest</td><td><a href="#m41">checkboxTest</a></td><td rowspan="1">1686422300898</td><td rowspan="1">430</td></tr><tr class="passedeven"><td><a href="#m42">checkboxTest2</a></td><td rowspan="1">1686422305094</td><td rowspan="1">468</td></tr><tr class="passedodd"><td rowspan="2">scripts._10_TGRadioButtonsTest</td><td><a href="#m43">radioButtonsTest</a></td><td rowspan="1">1686422309485</td><td rowspan="1">402</td></tr><tr class="passedodd"><td><a href="#m44">validatePracticeMore</a></td><td rowspan="1">1686422313584</td><td rowspan="1">458</td></tr><tr class="passedeven"><td rowspan="4">scripts._11_TGDropdownsTest</td><td><a href="#m45">dropdownTestCase</a></td><td rowspan="1">1686422318051</td><td rowspan="1">658</td></tr><tr class="passedeven"><td><a href="#m46">productColorTest</a></td><td rowspan="1">1686422322521</td><td rowspan="1">219</td></tr><tr class="passedeven"><td><a href="#m47">productDeliveryTest</a></td><td rowspan="1">1686422326575</td><td rowspan="1">30124</td></tr><tr class="passedeven"><td><a href="#m48">productDropdownTest</a></td><td rowspan="1">1686422360496</td><td rowspan="1">143</td></tr><tr class="passedodd"><td rowspan="2">scripts._12_TGAlertsTest</td><td><a href="#m49">confirmationAlert</a></td><td rowspan="1">1686422364534</td><td rowspan="1">262</td></tr><tr class="passedodd"><td><a href="#m50">warningAlert</a></td><td rowspan="1">1686422368504</td><td rowspan="1">145</td></tr><tr class="passedeven"><td rowspan="1">scripts._13_IFrameTest</td><td><a href="#m51">validateTheParagraph</a></td><td rowspan="1">1686422372204</td><td rowspan="1">227</td></tr><tr class="passedodd"><td rowspan="3">scripts._14_MultipleWindowsTest</td><td><a href="#m52">validateTheAppleNavigation</a></td><td rowspan="1">1686422409796</td><td rowspan="1">2087</td></tr><tr class="passedodd"><td><a href="#m53">validateTheMicrosoftNavigation</a></td><td rowspan="1">1686422415717</td><td rowspan="1">11978</td></tr><tr class="passedodd"><td><a href="#m54">validateTheTeslaNavigation</a></td><td rowspan="1">1686422431371</td><td rowspan="1">2285</td></tr><tr class="passedeven"><td rowspan="1">scripts._15_TGFileUpload</td><td><a href="#m55">basicFileUpload</a></td><td rowspan="1">1686422458771</td><td rowspan="1">3252</td></tr><tr class="passedodd"><td rowspan="1">scripts._16_TGFileDownload</td><td><a href="#m56">validateFileDownload</a></td><td rowspan="1">1686422465963</td><td rowspan="1">99</td></tr><tr class="passedeven"><td rowspan="4">scripts._17_TGStaticTableTest</td><td><a href="#m57">validateEachCell</a></td><td rowspan="1">1686422470200</td><td rowspan="1">414</td></tr><tr class="passedeven"><td><a href="#m58">validateFirstRow</a></td><td rowspan="1">1686422474571</td><td rowspan="1">96</td></tr><tr class="passedeven"><td><a href="#m59">validateLastColumn</a></td><td rowspan="1">1686422478582</td><td rowspan="1">122</td></tr><tr class="passedeven"><td><a href="#m60">validateTableHeader</a></td><td rowspan="1">1686422482798</td><td rowspan="1">108</td></tr><tr class="passedodd"><td rowspan="1">scripts._18_TGSortableTableTest</td><td><a href="#m61">validateSortAscByQuantity</a></td><td rowspan="1">1686422486850</td><td rowspan="1">2215</td></tr><tr class="passedeven"><td rowspan="4">scripts._19_TGActionsTest</td><td><a href="#m62">dragAndDrop</a></td><td rowspan="1">1686422493031</td><td rowspan="1">28630</td></tr><tr class="passedeven"><td><a href="#m63">keyboardActions</a></td><td rowspan="1">1686422525550</td><td rowspan="1">4459</td></tr><tr class="passedeven"><td><a href="#m64">moreKeyboardActions</a></td><td rowspan="1">1686422533829</td><td rowspan="1">4297</td></tr><tr class="passedeven"><td><a href="#m65">mouseActions</a></td><td rowspan="1">1686422541851</td><td rowspan="1">3665</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">scripts._01_ProjectTest</td><td><a href="#m0">validateContactUsInfo</a></td><td rowspan="1">1686609818864</td><td rowspan="1">354</td></tr><tr class="failedeven"><td><a href="#m1">validateEmail</a></td><td rowspan="1">1686609835926</td><td rowspan="1">159</td></tr><tr class="failedeven"><td><a href="#m2">validateFullNameInputBox</a></td><td rowspan="1">1686609823568</td><td rowspan="1">278</td></tr><tr class="failedeven"><td><a href="#m3">validateGenderRadioButton</a></td><td rowspan="1">1686609827658</td><td rowspan="1">72</td></tr><tr class="failedodd"><td rowspan="5">scripts._03_ProjectTest</td><td><a href="#m4">validateBookYourTrip</a></td><td rowspan="1">1686609944058</td><td rowspan="1">30247</td></tr><tr class="failedodd"><td><a href="#m5">validateTest3</a></td><td rowspan="1">1686610011644</td><td rowspan="1">1327</td></tr><tr class="failedodd"><td><a href="#m6">validateTest4</a></td><td rowspan="1">1686610017154</td><td rowspan="1">1189</td></tr><tr class="failedodd"><td><a href="#m7">validateTest5</a></td><td rowspan="1">1686610021919</td><td rowspan="1">1526</td></tr><tr class="failedodd"><td><a href="#m8">validateTestCase2</a></td><td rowspan="1">1686609977743</td><td rowspan="1">30328</td></tr><tr class="failedeven"><td rowspan="1">scripts._08_TGWaitsTest</td><td><a href="#m9">waitForBlueBox</a></td><td rowspan="1">1686610098257</td><td rowspan="1">30150</td></tr><tr class="failedodd"><td rowspan="1">scripts._13_IFrameTest</td><td><a href="#m10">validateTheFormSubmission</a></td><td rowspan="1">1686610226643</td><td rowspan="1">30197</td></tr><tr class="failedeven"><td rowspan="1">scripts._14_MultipleWindowsTest</td><td><a href="#m11">validateTheLinkURLs</a></td><td rowspan="1">1686610277708</td><td rowspan="1">7309</td></tr><tr class="failedodd"><td rowspan="1">scripts._21_EtsyTest</td><td><a href="#m12">validateEtsyHeaderItems</a></td><td rowspan="1">1686610512310</td><td rowspan="1">226</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">scripts._01_GoogleTest</td><td><a href="#m13">validateNavigation</a></td><td rowspan="1">1686609778232</td><td rowspan="1">11305</td></tr><tr class="passedeven"><td><a href="#m14">validateSearchBar</a></td><td rowspan="1">1686609811377</td><td rowspan="1">154</td></tr><tr class="passedeven"><td><a href="#m15">validateSearchButton</a></td><td rowspan="1">1686609795819</td><td rowspan="1">146</td></tr><tr class="passedeven"><td><a href="#m16">validateTitleAndURL</a></td><td rowspan="1">1686609802543</td><td rowspan="1">37</td></tr><tr class="passedodd"><td rowspan="6">scripts._01_ProjectTest</td><td><a href="#m17">validateAddress</a></td><td rowspan="1">1686609831626</td><td rowspan="1">284</td></tr><tr class="passedodd"><td><a href="#m18">validateConsentCheckBox</a></td><td rowspan="1">1686609848148</td><td rowspan="1">301</td></tr><tr class="passedodd"><td><a href="#m19">validateInfoSubmitting</a></td><td rowspan="1">1686609852461</td><td rowspan="1">5182</td></tr><tr class="passedodd"><td><a href="#m20">validateMessage</a></td><td rowspan="1">1686609844300</td><td rowspan="1">222</td></tr><tr class="passedodd"><td><a href="#m21">validatePhone</a></td><td rowspan="1">1686609839902</td><td rowspan="1">329</td></tr><tr class="passedodd"><td><a href="#m22">validateSubmit</a></td><td rowspan="1">1686609861432</td><td rowspan="1">107</td></tr><tr class="passedeven"><td rowspan="1">scripts._02_AppleTest</td><td><a href="#m23">validateTitleAndURL</a></td><td rowspan="1">1686609866078</td><td rowspan="1">18</td></tr><tr class="passedodd"><td rowspan="10">scripts._02_ProjectTest</td><td><a href="#m24">validateTheForgotPasswordLinkAndResetPasswordModal</a></td><td rowspan="1">1686609885378</td><td rowspan="1">655</td></tr><tr class="passedodd"><td><a href="#m25">validateTheInvalidLoginWithEmptyCredentials</a></td><td rowspan="1">1686609928238</td><td rowspan="1">278</td></tr><tr class="passedodd"><td><a href="#m26">validateTheInvalidLoginWithTheWrongPassword</a></td><td rowspan="1">1686609936434</td><td rowspan="1">481</td></tr><tr class="passedodd"><td><a href="#m27">validateTheInvalidLoginWithTheWrongUsername</a></td><td rowspan="1">1686609932255</td><td rowspan="1">501</td></tr><tr class="passedodd"><td><a href="#m28">validateTheInvalidLoginWithTheWrongUsernameAndPassword</a></td><td rowspan="1">1686609940440</td><td rowspan="1">363</td></tr><tr class="passedodd"><td><a href="#m29">validateTheLogOut</a></td><td rowspan="1">1686609881118</td><td rowspan="1">520</td></tr><tr class="passedodd"><td><a href="#m30">validateTheLoginForm</a></td><td rowspan="1">1686609872808</td><td rowspan="1">614</td></tr><tr class="passedodd"><td><a href="#m31">validateTheResetPasswordFormSubmission</a></td><td rowspan="1">1686609923906</td><td rowspan="1">448</td></tr><tr class="passedodd"><td><a href="#m32">validateTheResetPasswordModalCloseButton</a></td><td rowspan="1">1686609889938</td><td rowspan="1">30522</td></tr><tr class="passedodd"><td><a href="#m33">validateTheValidLogin</a></td><td rowspan="1">1686609877162</td><td rowspan="1">485</td></tr><tr class="passedeven"><td rowspan="6">scripts._03_TGLocatorsTest</td><td><a href="#m34">validateAllLinks</a></td><td rowspan="1">1686610047457</td><td rowspan="1">349</td></tr><tr class="passedeven"><td><a href="#m35">validateAllParagraphs</a></td><td rowspan="1">1686610039617</td><td rowspan="1">252</td></tr><tr class="passedeven"><td><a href="#m36">validateGrapesParagraph</a></td><td rowspan="1">1686610035508</td><td rowspan="1">81</td></tr><tr class="passedeven"><td><a href="#m37">validateKiwiParagraph</a></td><td rowspan="1">1686610027342</td><td rowspan="1">117</td></tr><tr class="passedeven"><td><a href="#m38">validateOrangeParagraph</a></td><td rowspan="1">1686610031680</td><td rowspan="1">223</td></tr><tr class="passedeven"><td><a href="#m39">validateRedAppleLink</a></td><td rowspan="1">1686610043686</td><td rowspan="1">95</td></tr><tr class="passedodd"><td rowspan="4">scripts._04_TGLocatorsTest</td><td><a href="#m40">automationTools</a></td><td rowspan="1">1686610051789</td><td rowspan="1">299</td></tr><tr class="passedodd"><td><a href="#m41">validateLanguages</a></td><td rowspan="1">1686610056068</td><td rowspan="1">171</td></tr><tr class="passedodd"><td><a href="#m42">validateListHeaders</a></td><td rowspan="1">1686610060130</td><td rowspan="1">136</td></tr><tr class="passedodd"><td><a href="#m43">validateTheHeader</a></td><td rowspan="1">1686610064321</td><td rowspan="1">85</td></tr><tr class="passedeven"><td rowspan="2">scripts._05_FacebookTest</td><td><a href="#m44">validateFacebookInvalidLoginAttempt</a></td><td rowspan="1">1686610068286</td><td rowspan="1">1043</td></tr><tr class="passedeven"><td><a href="#m45">validateFacebookLoginForm</a></td><td rowspan="1">1686610072907</td><td rowspan="1">519</td></tr><tr class="passedodd"><td rowspan="2">scripts._06_WikiTest</td><td><a href="#m46">validateWikiSearch1</a></td><td rowspan="1">1686610076934</td><td rowspan="1">784</td></tr><tr class="passedodd"><td><a href="#m47">validateWikiSearch2</a></td><td rowspan="1">1686610081282</td><td rowspan="1">963</td></tr><tr class="passedeven"><td rowspan="3">scripts._07_TGDynamicElementsTest</td><td><a href="#m48">validateDynamicElementBox1</a></td><td rowspan="1">1686610086689</td><td rowspan="1">131</td></tr><tr class="passedeven"><td><a href="#m49">validateDynamicElementBox2</a></td><td rowspan="1">1686610090548</td><td rowspan="1">78</td></tr><tr class="passedeven"><td><a href="#m50">validateDynamicElementBoxes</a></td><td rowspan="1">1686610094542</td><td rowspan="1">123</td></tr><tr class="passedodd"><td rowspan="1">scripts._08_TGWaitsTest</td><td><a href="#m51">waitForRedBox</a></td><td rowspan="1">1686610132100</td><td rowspan="1">10131</td></tr><tr class="passedeven"><td rowspan="2">scripts._09_TGCheckboxTest</td><td><a href="#m52">checkboxTest</a></td><td rowspan="1">1686610145753</td><td rowspan="1">444</td></tr><tr class="passedeven"><td><a href="#m53">checkboxTest2</a></td><td rowspan="1">1686610151375</td><td rowspan="1">503</td></tr><tr class="passedodd"><td rowspan="2">scripts._10_TGRadioButtonsTest</td><td><a href="#m54">radioButtonsTest</a></td><td rowspan="1">1686610156489</td><td rowspan="1">537</td></tr><tr class="passedodd"><td><a href="#m55">validatePracticeMore</a></td><td rowspan="1">1686610161163</td><td rowspan="1">434</td></tr><tr class="passedeven"><td rowspan="4">scripts._11_TGDropdownsTest</td><td><a href="#m56">dropdownTestCase</a></td><td rowspan="1">1686610166038</td><td rowspan="1">913</td></tr><tr class="passedeven"><td><a href="#m57">productColorTest</a></td><td rowspan="1">1686610171302</td><td rowspan="1">214</td></tr><tr class="passedeven"><td><a href="#m58">productDeliveryTest</a></td><td rowspan="1">1686610175765</td><td rowspan="1">30136</td></tr><tr class="passedeven"><td><a href="#m59">productDropdownTest</a></td><td rowspan="1">1686610210719</td><td rowspan="1">155</td></tr><tr class="passedodd"><td rowspan="2">scripts._12_TGAlertsTest</td><td><a href="#m60">confirmationAlert</a></td><td rowspan="1">1686610214791</td><td rowspan="1">227</td></tr><tr class="passedodd"><td><a href="#m61">warningAlert</a></td><td rowspan="1">1686610218775</td><td rowspan="1">179</td></tr><tr class="passedeven"><td rowspan="1">scripts._13_IFrameTest</td><td><a href="#m62">validateTheParagraph</a></td><td rowspan="1">1686610222545</td><td rowspan="1">277</td></tr><tr class="passedodd"><td rowspan="3">scripts._14_MultipleWindowsTest</td><td><a href="#m63">validateTheAppleNavigation</a></td><td rowspan="1">1686610260216</td><td rowspan="1">1876</td></tr><tr class="passedodd"><td><a href="#m64">validateTheMicrosoftNavigation</a></td><td rowspan="1">1686610265490</td><td rowspan="1">2693</td></tr><tr class="passedodd"><td><a href="#m65">validateTheTeslaNavigation</a></td><td rowspan="1">1686610272057</td><td rowspan="1">2284</td></tr><tr class="passedeven"><td rowspan="4">scripts._17_TGStaticTableTest</td><td><a href="#m66">validateEachCell</a></td><td rowspan="1">1686610288732</td><td rowspan="1">288</td></tr><tr class="passedeven"><td><a href="#m67">validateFirstRow</a></td><td rowspan="1">1686610292462</td><td rowspan="1">72</td></tr><tr class="passedeven"><td><a href="#m68">validateLastColumn</a></td><td rowspan="1">1686610296521</td><td rowspan="1">66</td></tr><tr class="passedeven"><td><a href="#m69">validateTableHeader</a></td><td rowspan="1">1686610299899</td><td rowspan="1">75</td></tr><tr class="passedodd"><td rowspan="1">scripts._18_TGSortableTableTest</td><td><a href="#m70">validateSortAscByQuantity</a></td><td rowspan="1">1686610303557</td><td rowspan="1">2125</td></tr><tr class="passedeven"><td rowspan="4">scripts._19_TGActionsTest</td><td><a href="#m71">dragAndDrop</a></td><td rowspan="1">1686610309015</td><td rowspan="1">145731</td></tr><tr class="passedeven"><td><a href="#m72">keyboardActions</a></td><td rowspan="1">1686610458410</td><td rowspan="1">4443</td></tr><tr class="passedeven"><td><a href="#m73">moreKeyboardActions</a></td><td rowspan="1">1686610466551</td><td rowspan="1">4270</td></tr><tr class="passedeven"><td><a href="#m74">mouseActions</a></td><td rowspan="1">1686610474235</td><td rowspan="1">3574</td></tr><tr class="passedodd"><td rowspan="5">scripts._20_GoogleSearchTest</td><td><a href="#m75">validateTheGoogleSearchResult</a></td><td rowspan="1">1686610481062</td><td rowspan="1">2333</td></tr><tr class="passedodd"><td><a href="#m76">validateTheSearch</a></td><td rowspan="4">1686610498035</td><td rowspan="4">3047</td></tr><tr class="passedodd"><td><a href="#m77">validateTheSearch</a></td></tr><tr class="passedodd"><td><a href="#m78">validateTheSearch</a></td></tr><tr class="passedodd"><td><a href="#m79">validateTheSearch</a></td></tr><tr class="passedeven"><td rowspan="1">testng_knowledge._03_Ignoring_Tests</td><td><a href="#m80">test1</a></td><td rowspan="1">1686610513385</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>All Functionalities</h2><h3 id="m0">scripts._01_ProjectTest#validateContactUsInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [2860 S River Rd Suite 480, Des Plaines, IL 60018]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
+<h2>Surefire test</h2><h3 id="m0">scripts._01_ProjectTest#validateContactUsInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [2860 S River Rd Suite 480, Des Plaines, IL 60018]
 	at scripts._01_ProjectTest.validateContactUsInfo(_01_ProjectTest.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">scripts._01_ProjectTest#validateEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Email] but found [Email *]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
 	at scripts._01_ProjectTest.validateEmail(_01_ProjectTest.java:131)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">scripts._01_ProjectTest#validateFullNameInputBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Enter your  name] but found [Enter your full name]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
 	at scripts._01_ProjectTest.validateFullNameInputBox(_01_ProjectTest.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">scripts._01_ProjectTest#validateGenderRadioButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Gender] but found [Gender *]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
 	at scripts._01_ProjectTest.validateGenderRadioButton(_01_ProjectTest.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">scripts._08_TGWaitsTest#waitForBlueBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[class*=&apos;blue_box&apos;]&quot;}
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts._03_ProjectTest#validateBookYourTrip</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//label[@class=label])[2]&quot;}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ba319645e6094fd8054e9abdf9a9c46
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a035c80e9d0e66215ba6cf9b1b8a53b6
+*** Element info: {Using=xpath, value=(//label[@class=label])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at scripts._03_ProjectTest.validateBookYourTrip(_03_ProjectTest.java:47)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts._03_ProjectTest#validateTest3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f35d79462bcca717b94758c1957f6fd4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at scripts._03_ProjectTest.validateTest3(_03_ProjectTest.java:151)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">scripts._03_ProjectTest#validateTest4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eeb6d4629ee0cf870dc362656d58fa9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at scripts._03_ProjectTest.validateTest4(_03_ProjectTest.java:191)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">scripts._03_ProjectTest#validateTest5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd909b2b683e9dab40af24ebcad29e5a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at scripts._03_ProjectTest.validateTest5(_03_ProjectTest.java:228)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">scripts._03_ProjectTest#validateTestCase2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//label[@class=label])[2]&quot;}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a24a65a4053fa9a082d5457b0108afff
+*** Element info: {Using=xpath, value=(//label[@class=label])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at scripts._03_ProjectTest.validateTestCase2(_03_ProjectTest.java:99)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">scripts._08_TGWaitsTest#waitForBlueBox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[class*=&apos;blue_box&apos;]&quot;}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c459bc329db830fa27c2381d8866d8fd
 *** Element info: {Using=css selector, value=button[class*=&apos;blue_box&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -193,51 +159,17 @@ Session ID: 4ba319645e6094fd8054e9abdf9a9c46
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at scripts._08_TGWaitsTest.waitForBlueBox(_08_TGWaitsTest.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">scripts._13_IFrameTest#validateTheFormSubmission</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;first_name]&quot;}
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">scripts._13_IFrameTest#validateTheFormSubmission</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[id=&apos;first_name]&quot;}
   (Session info: chrome=114.0.5735.110)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;HP&apos;, ip: &apos;192.168.0.130&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58098}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8aaff49ecef35c0e0909b7182ad5e33b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\melek\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b36be23f3377f0e077e4e20e5296f7d
 *** Element info: {Using=css selector, value=input[id=&apos;first_name]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -249,135 +181,83 @@ Session ID: 8aaff49ecef35c0e0909b7182ad5e33b
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at scripts._13_IFrameTest.validateTheFormSubmission(_13_IFrameTest.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">scripts._14_MultipleWindowsTest#validateTheLinkURLs</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [https://www.microsoft.com/en-us/] but found [https://www.microsoft.com/en-ca/]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">scripts._14_MultipleWindowsTest#validateTheLinkURLs</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [https://www.microsoft.com/en-us/] but found [https://www.microsoft.com/en-ca/]
 	at scripts._14_MultipleWindowsTest.validateTheLinkURLs(_14_MultipleWindowsTest.java:110)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">scripts._01_GoogleTest#validateNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">scripts._01_GoogleTest#validateSearchButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">scripts._01_GoogleTest#validateTitleAndURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">scripts._01_ProjectTest#validateAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">scripts._01_ProjectTest#validateConsentCheckBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">scripts._01_ProjectTest#validateInfoSubmitting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">scripts._01_ProjectTest#validateMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">scripts._01_ProjectTest#validatePhone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">scripts._01_ProjectTest#validateSubmit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">scripts._02_AppleTest#validateTitleAndURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">scripts._02_ProjectTest#validateTheForgotPasswordLinkAndResetPasswordModal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">scripts._02_ProjectTest#validateTheInvalidLoginWithEmptyCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">scripts._02_ProjectTest#validateTheInvalidLoginWithTheWrongPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">scripts._02_ProjectTest#validateTheInvalidLoginWithTheWrongUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">scripts._02_ProjectTest#validateTheInvalidLoginWithTheWrongUsernameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m22">scripts._02_ProjectTest#validateTheLogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m23">scripts._02_ProjectTest#validateTheLoginForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m24">scripts._02_ProjectTest#validateTheResetPasswordFormSubmission</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m25">scripts._02_ProjectTest#validateTheResetPasswordModalCloseButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m26">scripts._02_ProjectTest#validateTheValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m27">scripts._03_TGLocatorsTest#validateAllLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m28">scripts._03_TGLocatorsTest#validateGrapesParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m29">scripts._03_TGLocatorsTest#validateKiwiParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m30">scripts._03_TGLocatorsTest#validateOrangeParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m31">scripts._03_TGLocatorsTest#validateRedAppleLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m32">scripts._04_TGLocatorsTest#validateLanguages</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m33">scripts._04_TGLocatorsTest#validateListHeaders</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m34">scripts._04_TGLocatorsTest#validateTheHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m35">scripts._05_FacebookTest#validateFacebookInvalidLoginAttempt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m36">scripts._06_WikiTest#validateWikiSearch2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m37">scripts._07_TGDynamicElementsTest#validateDynamicElementBox1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m38">scripts._07_TGDynamicElementsTest#validateDynamicElementBox2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m39">scripts._07_TGDynamicElementsTest#validateDynamicElementBoxes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m40">scripts._08_TGWaitsTest#waitForRedBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m41">scripts._09_TGCheckboxTest#checkboxTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m42">scripts._09_TGCheckboxTest#checkboxTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m43">scripts._10_TGRadioButtonsTest#radioButtonsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m44">scripts._10_TGRadioButtonsTest#validatePracticeMore</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m45">scripts._11_TGDropdownsTest#dropdownTestCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m46">scripts._11_TGDropdownsTest#productColorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m47">scripts._11_TGDropdownsTest#productDeliveryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m48">scripts._11_TGDropdownsTest#productDropdownTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m49">scripts._12_TGAlertsTest#confirmationAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m50">scripts._12_TGAlertsTest#warningAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m51">scripts._13_IFrameTest#validateTheParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m52">scripts._14_MultipleWindowsTest#validateTheAppleNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m53">scripts._14_MultipleWindowsTest#validateTheMicrosoftNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m54">scripts._14_MultipleWindowsTest#validateTheTeslaNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m55">scripts._15_TGFileUpload#basicFileUpload</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m56">scripts._16_TGFileDownload#validateFileDownload</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m57">scripts._17_TGStaticTableTest#validateEachCell</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m58">scripts._17_TGStaticTableTest#validateFirstRow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m59">scripts._17_TGStaticTableTest#validateLastColumn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m60">scripts._17_TGStaticTableTest#validateTableHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m61">scripts._18_TGSortableTableTest#validateSortAscByQuantity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m62">scripts._19_TGActionsTest#dragAndDrop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m63">scripts._19_TGActionsTest#keyboardActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m64">scripts._19_TGActionsTest#moreKeyboardActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m65">scripts._19_TGActionsTest#mouseActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">scripts._21_EtsyTest#validateEtsyHeaderItems</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Jewelry &amp; Accessories] but found [Jewellery &amp; Accessories]
+	at scripts._21_EtsyTest.validateEtsyHeaderItems(_21_EtsyTest.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">scripts._01_GoogleTest#validateNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">scripts._01_GoogleTest#validateSearchBar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">scripts._01_GoogleTest#validateSearchButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">scripts._01_GoogleTest#validateTitleAndURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">scripts._01_ProjectTest#validateAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">scripts._01_ProjectTest#validateConsentCheckBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">scripts._01_ProjectTest#validateInfoSubmitting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">scripts._01_ProjectTest#validateMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">scripts._01_ProjectTest#validatePhone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">scripts._01_ProjectTest#validateSubmit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">scripts._02_AppleTest#validateTitleAndURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">scripts._02_ProjectTest#validateTheForgotPasswordLinkAndResetPasswordModal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">scripts._02_ProjectTest#validateTheInvalidLoginWithEmptyCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">scripts._02_ProjectTest#validateTheInvalidLoginWithTheWrongPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">scripts._02_ProjectTest#validateTheInvalidLoginWithTheWrongUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">scripts._02_ProjectTest#validateTheInvalidLoginWithTheWrongUsernameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">scripts._02_ProjectTest#validateTheLogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">scripts._02_ProjectTest#validateTheLoginForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">scripts._02_ProjectTest#validateTheResetPasswordFormSubmission</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">scripts._02_ProjectTest#validateTheResetPasswordModalCloseButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">scripts._02_ProjectTest#validateTheValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">scripts._03_TGLocatorsTest#validateAllLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">scripts._03_TGLocatorsTest#validateAllParagraphs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">scripts._03_TGLocatorsTest#validateGrapesParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">scripts._03_TGLocatorsTest#validateKiwiParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">scripts._03_TGLocatorsTest#validateOrangeParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">scripts._03_TGLocatorsTest#validateRedAppleLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">scripts._04_TGLocatorsTest#automationTools</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">scripts._04_TGLocatorsTest#validateLanguages</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">scripts._04_TGLocatorsTest#validateListHeaders</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">scripts._04_TGLocatorsTest#validateTheHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">scripts._05_FacebookTest#validateFacebookInvalidLoginAttempt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">scripts._05_FacebookTest#validateFacebookLoginForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">scripts._06_WikiTest#validateWikiSearch1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">scripts._06_WikiTest#validateWikiSearch2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">scripts._07_TGDynamicElementsTest#validateDynamicElementBox1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">scripts._07_TGDynamicElementsTest#validateDynamicElementBox2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">scripts._07_TGDynamicElementsTest#validateDynamicElementBoxes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">scripts._08_TGWaitsTest#waitForRedBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">scripts._09_TGCheckboxTest#checkboxTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">scripts._09_TGCheckboxTest#checkboxTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">scripts._10_TGRadioButtonsTest#radioButtonsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">scripts._10_TGRadioButtonsTest#validatePracticeMore</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">scripts._11_TGDropdownsTest#dropdownTestCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">scripts._11_TGDropdownsTest#productColorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">scripts._11_TGDropdownsTest#productDeliveryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">scripts._11_TGDropdownsTest#productDropdownTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">scripts._12_TGAlertsTest#confirmationAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">scripts._12_TGAlertsTest#warningAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">scripts._13_IFrameTest#validateTheParagraph</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">scripts._14_MultipleWindowsTest#validateTheAppleNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">scripts._14_MultipleWindowsTest#validateTheMicrosoftNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m65">scripts._14_MultipleWindowsTest#validateTheTeslaNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m66">scripts._17_TGStaticTableTest#validateEachCell</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m67">scripts._17_TGStaticTableTest#validateFirstRow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m68">scripts._17_TGStaticTableTest#validateLastColumn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m69">scripts._17_TGStaticTableTest#validateTableHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m70">scripts._18_TGSortableTableTest#validateSortAscByQuantity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m71">scripts._19_TGActionsTest#dragAndDrop</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m72">scripts._19_TGActionsTest#keyboardActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m73">scripts._19_TGActionsTest#moreKeyboardActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m74">scripts._19_TGActionsTest#mouseActions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m75">scripts._20_GoogleSearchTest#validateTheGoogleSearchResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m76">scripts._20_GoogleSearchTest#validateTheSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Apple</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m77">scripts._20_GoogleSearchTest#validateTheSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Microsoft</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m78">scripts._20_GoogleSearchTest#validateTheSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Tesla</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m79">scripts._20_GoogleSearchTest#validateTheSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Oracle</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m80">testng_knowledge._03_Ignoring_Tests#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
